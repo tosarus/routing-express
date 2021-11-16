@@ -1,6 +1,6 @@
 {
   "name": "@tosarus/routing-express",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "Routing library for express",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -8,10 +8,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tosarus/routing-express.git"
+    "url": "git+https://github.com/tosarus/routing-express.git"
   },
   "scripts": {
     "build": "tsc",
+    "prepare": "yarn build",
     "clean": "rm -rf lib/"
   },
   "files": [
