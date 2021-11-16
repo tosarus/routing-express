@@ -1,0 +1,59 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "import"],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-use-before-define": ["error", { "functions": false }],
+    "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "[iI]gnored", "argsIgnorePattern": "^_" }],
+    "curly": ["error", "all"],
+    "import/order": [
+      "error",
+      {
+        "alphabetize": { "order": "asc" },
+        "pathGroups": [
+          {
+            "pattern": "@*/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "react",
+            "group": "builtin",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [],
+        "warnOnUnassignedImports": true
+      }
+    ],
+    "indent": "off",
+    "linebreak-style": ["error", "unix"],
+    "no-use-before-define": "off",
+    "no-var": "error",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "react/display-name": "off",
+    "semi": ["error", "always"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // React version. "detect" automatically picks the version you have installed.
+    }
+  }
+}
