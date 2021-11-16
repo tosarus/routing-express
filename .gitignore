@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # production
-dist/
+lib/
 
 # Dependency directories
 node_modules/
