@@ -1,6 +1,6 @@
 {
   "name": "@tosarus/routing-express",
-  "version": "0.5.7",
+  "version": "0.5.27",
   "description": "Routing library for express",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
