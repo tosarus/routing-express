@@ -81,7 +81,7 @@ export class ExpressDriver {
       actionMetadata.params
         .filter((param) => param.type === 'file')
         .forEach((param) => {
-          middlewares.push(multer({ storage: multer.memoryStorage() }).single(param.name));
+          middlewares.push(multer({ storage: multer.memoryStorage() }).single(param.name) as RequestHandler);
         });
     }
 
