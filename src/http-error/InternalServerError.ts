@@ -10,6 +10,8 @@ export class InternalServerError extends HttpError {
     super(500);
     Object.setPrototypeOf(this, InternalServerError.prototype);
 
-    if (message) {this.message = message;}
+    if (message) {
+      this.message = message;
+    }
   }
 }

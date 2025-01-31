@@ -10,6 +10,8 @@ export class NotFoundError extends HttpError {
     super(404);
     Object.setPrototypeOf(this, NotFoundError.prototype);
 
-    if (message) {this.message = message;}
+    if (message) {
+      this.message = message;
+    }
   }
 }

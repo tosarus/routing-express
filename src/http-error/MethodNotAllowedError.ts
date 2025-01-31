@@ -10,6 +10,8 @@ export class MethodNotAllowedError extends HttpError {
     super(405);
     Object.setPrototypeOf(this, MethodNotAllowedError.prototype);
 
-    if (message) {this.message = message;}
+    if (message) {
+      this.message = message;
+    }
   }
 }

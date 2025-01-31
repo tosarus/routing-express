@@ -8,10 +8,10 @@ import { RoutingControllersOptions } from './RoutingControllersOptions';
 import { ClassType, getFromContainer } from './container';
 import { HttpError } from './http-error/HttpError';
 import { NotFoundError } from './http-error/NotFoundError';
-import { MetadataBuilder } from './metadata-builder/MetadataBuilder';
 import { ActionMetadata } from './metadata/ActionMetadata';
 import { MiddlewareMetadata } from './metadata/MiddlewareMetadata';
 import { ParamMetadata } from './metadata/ParamMetadata';
+import { MetadataBuilder } from './metadata-builder/MetadataBuilder';
 import { isPromiseLike } from './util/isPromiseLike';
 
 /**

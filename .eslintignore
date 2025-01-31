@@ -1,6 +1,0 @@
-# build artefacts
-/dist/*
-/node_modules/*
-
-# data definition files
-**/*.d.ts

@@ -10,6 +10,8 @@ export class ForbiddenError extends HttpError {
     super(403);
     Object.setPrototypeOf(this, ForbiddenError.prototype);
 
-    if (message) {this.message = message;}
+    if (message) {
+      this.message = message;
+    }
   }
 }

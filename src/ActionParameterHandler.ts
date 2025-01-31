@@ -153,7 +153,7 @@ export class ActionParameterHandler {
     if (typeof value === 'string') {
       try {
         return JSON.parse(value);
-      } catch (error) {
+      } catch (_error) {
         throw new ParameterParseJsonError(paramMetadata.name, value);
       }
     }
